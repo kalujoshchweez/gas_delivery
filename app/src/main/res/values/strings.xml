@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">gas_delivery</string>
+    <string name="app_name">Gas Delivery</string>
+    <string name="client_details">Contact Information</string>
+    <string name="gas_info">Gas Information</string>
+    <string name="gas_order">Order Gas</string>
+    <string name="choose_gas_type">choose gas type:</string>
+    <string name="choose_weight">choose size/weight</string>
+    <string-array name="gas_type">
+        <item>K-GAS</item>
+        <item>PRO GAS</item>
+        <item>TOTAL</item>
+        <item>LAKE GAS</item>
+        <item>HASHI</item>
+        <item>OTHER</item>
+    </string-array>
+    <string-array name="gas_weight">
+        <item>6kg</item>
+        <item>13kg</item>
+    </string-array>
+    <string name="order_btn">Place Order</string>
 </resources>
