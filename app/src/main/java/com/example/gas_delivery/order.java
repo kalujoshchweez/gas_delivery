@@ -3,19 +3,29 @@ package com.example.gas_delivery;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
-public class order extends AppCompatActivity {
+import java.text.DecimalFormat;
+
+public class order extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+        myButtonLisner();
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
         Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        spinner2.setOnItemSelectedListener(this);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
         //create an array adapter for spinner 1
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.gas_type, android.R.layout.simple_spinner_item);
@@ -29,5 +39,32 @@ public class order extends AppCompatActivity {
         spinner2.setAdapter((adapter2));
 
 
+    }
+    public void onItemSelected(AdapterView<?> parent, View view ,int pos,long id){
+
+        //retrieve item
+        parent.getItemAtPosition(pos).toString();
+        String price_cat;
+        if(pos == 0){
+            price_cat="Ksh. 1000";
+        }else{
+            price_cat="Ksh. 2500";
+        }
+        final TextView price = (TextView) findViewById(R.id.price);
+        price.setText(price_cat);
+    }
+    public  void onNothingSelected(AdapterView<?> parent){
+        //another action
+
+    }
+
+    public  void  myButtonLisner(){
+        Button orderButton = (Button) findViewById(R.id.order_btn);
+        orderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

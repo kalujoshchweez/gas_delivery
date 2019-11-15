@@ -72,13 +72,11 @@
         android:layout_width="77dp"
         android:layout_height="34dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:text="Price:"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBaseline_toBaselineOf="@+id/price"
-        app:layout_constraintEnd_toStartOf="@+id/price"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -121,7 +119,7 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="134dp"
+        android:layout_width="155dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
@@ -141,16 +139,15 @@
         android:text="@string/order_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price" />
+        app:layout_constraintTop_toBottomOf="@+id/pricelabel" />
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="139dp"
-        android:layout_height="40dp"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 

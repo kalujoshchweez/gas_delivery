@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "911209692622",
+    "firebase_url": "https://gas-delivery-c3444.firebaseio.com",
+    "project_id": "gas-delivery-c3444",
+    "storage_bucket": "gas-delivery-c3444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911209692622:android:4e615b1e7c523e71a5ff9f",
+        "android_client_info": {
+          "package_name": "com.example.gas_delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911209692622-a1tn6p7bean0rnoq1edpb66c1bhhtm7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcpeJmu2dxhmuBrvWArphE_aWE63_AiCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911209692622-a1tn6p7bean0rnoq1edpb66c1bhhtm7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
