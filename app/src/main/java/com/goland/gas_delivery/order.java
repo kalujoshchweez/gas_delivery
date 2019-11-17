@@ -1,18 +1,15 @@
-package com.example.gas_delivery;
+package com.goland.gas_delivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import java.text.DecimalFormat;
 
 public class order extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -60,10 +57,11 @@ public class order extends AppCompatActivity implements AdapterView.OnItemSelect
 
     public  void  myButtonLisner(){
         Button orderButton = (Button) findViewById(R.id.order_btn);
+        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar2);
         orderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
     }
