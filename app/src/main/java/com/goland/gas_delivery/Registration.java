@@ -49,6 +49,7 @@ public class Registration extends AppCompatActivity {
         password = (EditText)findViewById(R.id.password);
         editUserName = (EditText)findViewById(R.id.editUserName);
         buttonSignup = (Button)findViewById(R.id.buttonSignup);
+        //stuff
 
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
