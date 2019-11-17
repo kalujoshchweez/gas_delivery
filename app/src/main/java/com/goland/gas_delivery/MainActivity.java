@@ -1,4 +1,4 @@
-package com.example.gas_delivery;
+package com.goland.gas_delivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
