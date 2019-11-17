@@ -26,6 +26,7 @@ public class STKPush {
     private String accountReference;
     @SerializedName("TransactionDesc")
     private String transactionDesc;
+    //done
 
     public STKPush(String businessShortCode, String password, String timestamp, String transactionType,
                    String amount, String partyA, String partyB, String phoneNumber, String callBackURL,
