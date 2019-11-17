@@ -18,4 +18,11 @@
         <item>13kg</item>
     </string-array>
     <string name="order_btn">Place Order</string>
+    <string name="choose_label">Choose method of payment:</string>
+    <string name="mpesa">M-PESA</string>
+    <string name="easypay">Easy pay</string>
+    <string name="Bank_payment">Bank Payment</string>
+    <string name="mpesa_detail">Pay with mpesa</string>
+    <string name="mpesa_detail_label">Enter Mpesa Details To pay:</string>
+    <string name="amount">Amount:</string>
 </resources>

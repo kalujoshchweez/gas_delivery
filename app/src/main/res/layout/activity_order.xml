@@ -72,13 +72,11 @@
         android:layout_width="77dp"
         android:layout_height="34dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:text="Price:"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBaseline_toBaselineOf="@+id/price"
-        app:layout_constraintEnd_toStartOf="@+id/price"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -101,7 +99,7 @@
         android:text="@string/choose_gas_type"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/client_phone" />
@@ -112,16 +110,18 @@
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/choose_weight"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="134dp"
+        android:layout_width="155dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
@@ -137,21 +137,32 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="#808080"
+        android:backgroundTint="#EE7D1F"
         android:text="@string/order_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price" />
+        app:layout_constraintTop_toBottomOf="@+id/pricelabel" />
 
     <TextView
         android:id="@+id/price"
-        android:layout_width="139dp"
-        android:layout_height="40dp"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:textColor="#FFFFFF"
+        android:text="TextView"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
