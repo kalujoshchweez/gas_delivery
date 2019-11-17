@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gas_delivery">
+    package="com.goland.gas_delivery">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,8 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".order">
+        <activity android:name="com.goland.gas_delivery.mpesa_payment"></activity>
+        <activity android:name="com.goland.gas_delivery.order" />
+        <activity android:name="com.goland.gas_delivery.MainActivity" />
+        <activity android:name="com.goland.gas_delivery.choose_method_of_payment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
