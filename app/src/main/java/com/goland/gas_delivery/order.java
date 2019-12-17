@@ -11,6 +11,8 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.gas_delivery.R;
+
 public class order extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override

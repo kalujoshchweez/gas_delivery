@@ -2,9 +2,18 @@ package com.goland.gas_delivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    public void jo(View v){
+        if (v.getId()==R.id.button){
+            Intent intent = new Intent(MainActivity.this, order.class);
+            startActivity(intent);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

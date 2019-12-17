@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b3a57"
+    tools:context=".SupplierLogin">
+
+    <EditText
+        android:id="@+id/editSupplierLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:hint="Enter your username"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="17dp"
+        />
+
+    <EditText
+        android:id="@+id/editSupplierPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editSupplierLogin"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <Button
+        android:id="@+id/buttonSupplierLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        android:backgroundTint="#808080"
+        android:text="Button"
+        android:onClick="next"
+        app:layout_constraintTop_toBottomOf="@+id/editSupplierPassword"
+        tools:layout_editor_absoluteX="163dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
