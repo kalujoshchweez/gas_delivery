@@ -25,4 +25,47 @@
     <string name="mpesa_detail">Pay with mpesa</string>
     <string name="mpesa_detail_label">Enter Mpesa Details To pay:</string>
     <string name="amount">Amount:</string>
+
+    <string name="text_Total">Total Gas</string>
+    <string name="text_k">K Gas</string>
+    <string name="text_lake">Lake Gas</string>
+    <string name="text_pro">Pro Gas</string>
+    <string name="text_expanded">Item selected</string>
+    <string name="text_collapsed">Make selection</string>
+
+    <string-array name="Total_Gas">
+        <item>Total 6kg Refill</item>
+        <item>Total 13kg Refill</item>
+        <item>Total 6kg Complete Gas</item>
+        <item>Total 13kg Complete Gas</item>
+        <item>Total 6kg Empty Gas Cylinder</item>
+        <item>Total 13kg Empty Gas Cylinder</item>
+    </string-array>
+
+    <string-array name="K_Gas">
+        <item>k Gas 6kg Refill</item>
+        <item>K Gas 13kg Refill</item>
+        <item>K Gas 6kg Complete Gas</item>
+        <item>K Gas 13kg Complete Gas</item>
+        <item>K Gas 6kg Empty Gas Cylinder</item>
+        <item>K Gas 13kg Empty Gas Cylinder</item>
+    </string-array>
+
+    <string-array name="Lake_Gas">
+        <item>Lake Gas 6kg Refill</item>
+        <item>Lake Gas 13kg Refill</item>
+        <item>Lake Gas 6kg Complete Gas</item>
+        <item>Lake Gas 13kg Complete Gas</item>
+        <item>Lake Gas 6kg Empty Gas Cylinder</item>
+        <item>Lake Gas 13kg Empty Gas Cylinder</item>
+    </string-array>
+
+    <string-array name="Pro_Gas">
+        <item>Pro Gas 6kg Refill</item>
+        <item>Pro Gas 13kg Refill</item>
+        <item>Pro Gas 6kg Complete Gas</item>
+        <item>Pro Gas 13kg Complete Gas</item>
+        <item>Pro Gas 6kg Empty Gas Cylinder</item>
+        <item>Pro Gas 13kg Empty Gas Cylinder</item>
+    </string-array>
 </resources>
